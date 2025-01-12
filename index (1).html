@@ -193,46 +193,4 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 </body>
 </html>
 
-			<script type='text/javascript'>
-				const lazyloadRunObserver = () => {
-					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
-					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
-						entries.forEach( ( entry ) => {
-							if ( entry.isIntersecting ) {
-								let lazyloadBackground = entry.target;
-								if( lazyloadBackground ) {
-									lazyloadBackground.classList.add( 'e-lazyloaded' );
-								}
-								lazyloadBackgroundObserver.unobserve( entry.target );
-							}
-						});
-					}, { rootMargin: '200px 0px 200px 0px' } );
-					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
-						lazyloadBackgroundObserver.observe( lazyloadBackground );
-					} );
-				};
-				const events = [
-					'DOMContentLoaded',
-					'elementor/lazyload/observe',
-				];
-				events.forEach( ( event ) => {
-					document.addEventListener( event, lazyloadRunObserver );
-				} );
-			</script>
-			<script type="text/javascript" src="https://klik.ambil-sekarang.online/wp-includes/js/dist/dom-ready.min.js?ver=f77871ff7694fffea381" id="wp-dom-ready-js"></script>
-<script type="text/javascript" id="starter-templates-zip-preview-js-extra">
-/* <![CDATA[ */
-var starter_templates_zip_preview = {"AstColorPaletteVarPrefix":"--ast-global-","AstEleColorPaletteVarPrefix":"--ast-global-"};
-/* ]]> */
-</script>
-<script type="text/javascript" src="https://klik.ambil-sekarang.online/wp-content/plugins/astra-sites/inc/lib/onboarding/assets/dist/template-preview/main.js?ver=06758d4d807d9d22c6ea" id="starter-templates-zip-preview-js"></script>
-<script type="text/javascript" id="uagb-forms-js-js-extra">
-/* <![CDATA[ */
-var uagb_forms_data = {"ajax_url":"https:\/\/klik.ambil-sekarang.online\/wp-admin\/admin-ajax.php","uagb_forms_ajax_nonce":"9a3d43b7e3"};
-var uagb_forms_data = {"ajax_url":"https:\/\/klik.ambil-sekarang.online\/wp-admin\/admin-ajax.php","uagb_forms_ajax_nonce":"9a3d43b7e3","recaptcha_site_key_v2":"","recaptcha_site_key_v3":""};
-/* ]]> */
-</script>
-<script type="text/javascript" src="https://klik.ambil-sekarang.online/wp-content/plugins/ultimate-addons-for-gutenberg/assets/js/forms.min.js?ver=2.16.1" id="uagb-forms-js-js"></script>
-<script type="text/javascript" src="https://klik.ambil-sekarang.online/wp-content/uploads/uag-plugin/assets/2000/uag-js-1732.js?ver=1736517642" id="uag-script-1732-js"></script>
-	</body>
-</html>
+	
